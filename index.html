@@ -7,13 +7,14 @@
   <style>
     body {
       margin: 0;
-      padding: 0;
+      padding: 20px;
       background: #f0f0f5;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
     }
 
     .card-container {
@@ -73,9 +74,8 @@
       font-size: 0.95em;
     }
 
-    .tap-notice {
-      position: absolute;
-      bottom: 10px;
+    .tap-notice-below {
+      margin-top: 12px;
       font-size: 0.85em;
       color: #666;
       font-style: italic;
@@ -118,7 +118,6 @@
         <p>🍹 <strong>Favourite drink: Dark & Stormy</strong></p>
         <p>🖼 <strong>Communicates in gifs from Schitt’s Creek & Mad Men</strong></p>
         <p>🖤 <strong>Soft dom. Top, if you need to know. Consent & curiosity first.</strong></p>
-        <p class="tap-notice">🔁 Tap to flip</p>
       </div>
 
       <!-- Back Side -->
@@ -139,6 +138,7 @@
       </div>
     </div>
   </div>
+  <p class="tap-notice-below">🔁 Tap the card to flip</p>
 
   <script>
     const card = document.getElementById('flipCard');
