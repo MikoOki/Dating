@@ -19,7 +19,7 @@
     .card-container {
       perspective: 1000px;
       width: 320px;
-      height: 520px;
+      height: 540px;
     }
 
     .card {
@@ -53,6 +53,7 @@
       padding: 20px;
       box-sizing: border-box;
       text-align: center;
+      position: relative;
     }
 
     .card-front img {
@@ -70,6 +71,14 @@
     .card-front p {
       margin: 6px 0;
       font-size: 0.95em;
+    }
+
+    .tap-notice {
+      position: absolute;
+      bottom: 10px;
+      font-size: 0.85em;
+      color: #666;
+      font-style: italic;
     }
 
     .card-back {
@@ -107,7 +116,8 @@
         <p>💪 <strong>GymRat with a love for spreadsheets</strong></p>
         <p>🍹 <strong>Favourite drink: Dark & Stormy</strong></p>
         <p>🖼 <strong>Communicates in gifs from Schitt’s Creek & Mad Men</strong></p>
-        <p>🖤 <strong>Soft Dom. Top, if you need to know. Consent & curiosity first.</strong></p>
+        <p>🖤 <strong>Soft dom. Top, if you need to know. Consent & curiosity first.</strong></p>
+        <p class="tap-notice">🔁 Tap to flip</p>
       </div>
 
       <!-- Back Side -->
